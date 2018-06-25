@@ -1,0 +1,6 @@
+[
+    {"name":"第二侧栏", "children":[
+        {"id":"wmsdemo1", "name":"示例1", "target":"navtab", "url":"index/demo1"},
+        {"id":"wmsdemo2", "name":"示例2", "target":"navtab", "url":"index/demo2"}
+    ]}
+]

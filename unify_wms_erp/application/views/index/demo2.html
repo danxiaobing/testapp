@@ -1,0 +1,197 @@
+<div class="bjui-pageContent clearfix">
+
+
+<ul id="ztree-test-demo3" class="ztree" data-toggle="ztree">
+    <li data-id="1" data-pid="0" data-faicon="rss" data-faicon-close="cab">表单元素</li>
+    <li data-id="2" data-pid="0" data-faicon="rss" data-faicon-close="cab">表单元素</li>
+    <li data-id="10" data-pid="1" data-url="form-button.html" data-tabid="form-button" data-faicon="bell">按钮</li>
+    <li data-id="11" data-pid="1" data-url="form-input.html" data-tabid="form-input" data-faicon="info-circle">文本框</li>
+    <li data-id="12" data-pid="2" data-url="form-input.html" data-tabid="form-input" data-faicon="info-circle">文本框</li>
+    <li data-id="13" data-pid="12" data-url="form-input.html" data-tabid="form-input" data-faicon="info-circle">文本框</li>
+    <li data-id="14" data-pid="13" data-url="form-input.html" data-tabid="form-input" data-faicon="info-circle">文本框</li>
+    <li data-id="15" data-pid="2" data-url="form-input.html" data-tabid="form-input" data-faicon="info-circle">文本框</li>
+    <li data-id="16" data-pid="2" data-url="form-input.html" data-tabid="form-input" data-faicon="info-circle">文本框</li>
+</ul>
+
+
+	<h4>普通的树形控件(竖形)</h4>
+
+	<ul id="ztree-test-demo2" class="ztree" data-toggle="ztree" data-check-enable="true" data-options="{nodes:'ztree_returnjson',expandAll:true}"></ul>
+
+
+
+	<h4>普通的树形控件(横向)</h4>
+
+	<ul id="ztree-test-demo2" class="ztree ztree-line" data-toggle="ztree" data-check-enable="true" data-options="{nodes:'ztree_returnjson',expandAll:true}"></ul>
+
+
+	<script type="text/javascript">
+
+	    function ztree_returnjson() {
+	        // return [{id:1,pid:0,name:'表单元素',children:[{id:10,pId:1,name:'按钮',children:[{id:14,pId:10,name:'dddd',faicon:'file-text'},{id:15,pId:10,name:'www',faicon:'file-text'}]},{id:11,pId:1,name:'文本框',faicon:'file-text'}]}]
+
+return [
+    {
+        id: 1,
+        pid: 0,
+        name: '表单元素',
+        children: [
+            {
+                id: 10,
+                pId: 1,
+                name: '按钮',
+                children: [
+                    {
+                        id: 14,
+                        pId: 10,
+                        name: 'dddd',
+                        faicon: 'file-text'
+                    },
+                    {
+                        id: 15,
+                        pId: 10,
+                        name: 'www',
+                        faicon: 'file-text'
+                    }
+                ]
+            },
+            {
+                id: 11,
+                pId: 1,
+                name: '文本框',
+                faicon: 'file-text'
+            }
+        ]
+    },
+     {
+        id: 2,
+        pid: 0,
+        name: '表单元素',
+        children: [
+            {
+                id: 13,
+                pId: 2,
+                name: '按钮',
+                children: [
+                    {
+                        id: 17,
+                        pId: 10,
+                        name: 'dddd',
+                        faicon: 'file-text'
+                    },
+                    {
+                        id: 18,
+                        pId: 10,
+                        name: 'www',
+                        faicon: 'file-text'
+                    }
+                ]
+            },
+            {
+                id: 19,
+                pId: 2,
+                name: '文本框',
+                faicon: 'file-text'
+            }
+        ]
+    },
+    {
+        id: 3,
+        pid: 0,
+        name: '表单元素',
+        children: [
+            {
+                id: 20,
+                pId: 3,
+                name: '按钮',
+                children: [
+                    {
+                        id: 21,
+                        pId: 10,
+                        name: 'dddd',
+                        faicon: 'file-text'
+                    },
+                    {
+                        id: 22,
+                        pId: 10,
+                        name: 'www',
+                        faicon: 'file-text'
+                    }
+                ]
+            },
+            {
+                id: 23,
+                pId: 3,
+                name: '文本框',
+                faicon: 'file-text'
+            }
+        ]
+    }
+]
+
+
+
+	    }
+   </script>
+<div style="clear: both;"></div>
+	<h4 style="clear: both;">点击输入框调出树形控件（可多选）</h4>
+	<input type="text" name="menus" id="j_ztree_menus1" data-toggle="selectztree" size="18" data-tree="#j_select_tree1" readonly>
+	<ul id="j_select_tree1" class="ztree hide" data-toggle="ztree" data-expand-all="true" data-check-enable="true" data-on-check="S_NodeCheck" data-on-click="S_NodeClick">
+		<li data-id="1" data-pid="0">表单元素</li>
+		<li data-id="10" data-pid="1" data-url="form-button.html" data-tabid="form-button">按钮</li>
+		<li data-id="11" data-pid="1" data-url="form-input.html" data-tabid="form-input">文本框</li>
+		<li data-id="12" data-pid="1" data-url="form-select.html" data-tabid="form-select">下拉选择框</li>
+		<li data-id="13" data-pid="1" data-url="form-checkbox.html" data-tabid="table">复选、单选框</li>
+		<li data-id="14" data-pid="1" data-url="form.html" data-tabid="form">表单综合演示</li>
+		<li data-id="2" data-pid="0">表格</li>
+		<li data-id="20" data-pid="2" data-url="table.html" data-tabid="table">普通表格</li>
+		<li data-id="21" data-pid="2" data-url="table-fixed.html" data-tabid="table-fixed">固定表头表格</li>
+		<li data-id="22" data-pid="2" data-url="table-edit.html" data-tabid="table-edit">可编辑表格</li>
+        <li data-id="22" data-pid="2" data-url="table-edit.html" data-tabid="table-edit">可编辑表格</li>
+	</ul>
+
+	<h4>点击输入框调出树形控件（单选）</h4>
+	<input type="text" name="menus" id="j_ztree_menus2" data-toggle="selectztree" size="18" data-tree="#j_select_tree2" readonly value="按钮">
+	<ul id="j_select_tree2" class="ztree hide" data-toggle="ztree" data-expand-all="true" data-check-enable="true" data-chk-style="radio" data-radio-type="all" data-on-check="S_NodeCheck" data-on-click="S_NodeClick">
+		<li data-id="1" data-pid="0">表单元素</li>
+		<li data-id="10" data-pid="1" data-url="form-button.html" data-tabid="form-button" data-checked="true">按钮</li>
+		<li data-id="11" data-pid="1" data-url="form-input.html" data-tabid="form-input">文本框</li>
+		<li data-id="12" data-pid="1" data-url="form-select.html" data-tabid="form-select">下拉选择框</li>
+		<li data-id="13" data-pid="1" data-url="form-checkbox.html" data-tabid="table">复选、单选框</li>
+		<li data-id="14" data-pid="1" data-url="form.html" data-tabid="form">表单综合演示</li>
+		<li data-id="2" data-pid="0">表格</li>
+		<li data-id="20" data-pid="2" data-url="table.html" data-tabid="table">普通表格</li>
+		<li data-id="21" data-pid="2" data-url="table-fixed.html" data-tabid="table-fixed">固定表头表格</li>
+		<li data-id="22" data-pid="2" data-url="table-edit.html" data-tabid="table-edit">可编辑表格</li>
+	</ul>
+
+</div>
+
+<script type="text/javascript">
+//选择事件
+function S_NodeCheck(e, treeId, treeNode) {
+    var zTree = $.fn.zTree.getZTreeObj(treeId),
+        nodes = zTree.getCheckedNodes(true)
+    var ids = '', names = ''
+    
+    for (var i = 0; i < nodes.length; i++) {
+        ids   += ','+ nodes[i].id
+        names += ','+ nodes[i].name
+    }
+    if (ids.length > 0) {
+        ids = ids.substr(1), names = names.substr(1)
+    }
+    
+    var $from = $('#'+ treeId).data('fromObj')
+    
+    if ($from && $from.length) $from.val(names)
+}
+//单击事件
+function S_NodeClick(event, treeId, treeNode) {
+    var zTree = $.fn.zTree.getZTreeObj(treeId)
+    
+    zTree.checkNode(treeNode, !treeNode.checked, true, true)
+    
+    event.preventDefault()
+}
+</script>

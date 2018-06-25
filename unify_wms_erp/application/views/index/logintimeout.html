@@ -1,0 +1,36 @@
+<script src="/static/common/js/custom.js"></script>
+<div class="bjui-pageContent">
+    <form action="/index/ajaxlogin" data-toggle="ajaxform" method="post" class="bjui-form col-1" data-close-current="true">
+      <!--   <div class="bjui-row">
+            <p class="form-label">登录账户</p>
+            <div class="form-input required">
+                <input type="text" data-rule="required"  name="username" value="" placeholder="邮箱地址">
+            </div>
+            <p>&nbsp;</p>
+            <label class="form-label">登录密码</label>
+            <div class="form-input required">
+                <input type="password" data-rule="required"  name="passwordhash" value="" placeholder="密码">
+            </div>
+        </div> -->
+        <div style=" margin: 0 auto;margin-left: -15px; width: 90%;padding-top: 10%;">
+
+            <div class="bjui-row col-1">
+                <label class="row-label">登录账户</label>
+                <div class="row-input required">
+                    <input type="text" name="username" value="" aria-required="true" data-rule="required,email" class="form-control" placeholder="邮箱地址"></div>
+                <p>&nbsp;</p>
+                <label class="row-label">登录密码</label>
+                <div class="row-input required">
+                    <input type="password" name="passwordhash" value="" aria-required="true" data-rule="required" class="form-control">
+                    </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+<div class="bjui-pageFooter">
+    <ul>
+        <li><button type="button" class="btn-close" data-icon="remove">取消</button></li>
+        <li><button type="submit"   class="btn-default" data-icon="check">登录</button></li>
+    </ul>
+</div>

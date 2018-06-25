@@ -1,0 +1,175 @@
+<div class="bjui-pageContent clearfix">
+
+    <!--高级搜索 start-->
+   
+
+    <div id="Advancedsearch" class="Advancedsearch collapse">
+        <form action="">
+            <div class="bjui-row col-3">
+                 <label class="row-label">下拉框</label>
+                <div class="row-input">
+                    <select data-toggle="selectpicker" data-width="100%">
+                        <option value="">全部</option>
+                        <option value="1">下拉选项1</option>
+                        <option value="2" selected="">下拉选项2</option>
+                        <option value="3">下拉选项3</option>
+                        <option value="4">下拉选项4</option>
+                    </select>
+                </div>
+                 <label class="row-label">多选下拉</label>
+                <div class="row-input">
+                    <select data-toggle="selectpicker" data-width="100%" multiple="">
+                        <option value="">全部</option>
+                        <option value="崇明">崇明</option>
+                        <option value="黄浦">黄浦</option>
+                        <option value="卢湾">卢湾</option>
+                        <option value="徐汇">徐汇</option>
+                        <option value="长宁">长宁</option>
+                        <option value="静安">静安</option>
+                        <option value="普陀">普陀</option>
+                        <option value="闸北">闸北</option>
+                        <option value="虹口">虹口</option>
+                        <option value="杨浦">杨浦</option>
+                        <option value="闵行">闵行</option>
+                        <option value="宝山">宝山</option>
+                        <option value="嘉定">嘉定</option>
+                        <option value="浦东">浦东</option>
+                        <option value="金山">金山</option>
+                        <option value="松江">松江</option>
+                        <option value="青浦">青浦</option>
+                        <option value="南汇">南汇</option>
+                        <option value="奉贤">奉贤</option>
+                        <option value="朱家角">朱家角</option>
+                    </select>
+                </div>
+                <label class="row-label">联动(二维数组)</label>
+                <div class="row-input">
+                    <select name="province" data-toggle="selectpicker" data-nextselect="#j_form_city" data-refurl="../../json/select/city_{value}.html">
+                        <option value="all">--省市--</option>
+                        <option value="bj">北京</option>
+                        <option value="sh">上海</option>
+                    </select>
+                    <select name="city" id="j_form_city" data-toggle="selectpicker" data-nextselect="#j_form_area" data-refurl="../../json/select/area_{value}.html" data-emptytxt="--城市--">
+                        <option value="all">--城市--</option>
+                    </select>
+                    <select name="area" id="j_form_area" data-toggle="selectpicker" data-emptytxt="--区县--">
+                        <option value="all">--区县--</option>
+                    </select>
+                </div>
+                <label class="row-label">普通文本框</label>
+                <div class="row-input">
+                    <input type="text" value="普通文本框">
+                </div>
+                 <label class="row-label">复选框</label>
+                <div class="row-input">
+                    <input type="checkbox" name="checkbox" id="j_form_checkbox1" value="1" data-toggle="icheck" data-label="复选框">
+                    <input type="checkbox" name="checkbox" id="j_form_checkbox2" value="2" data-toggle="icheck" data-label="复选框">
+                </div>
+                <label class="row-label">单选框</label>
+                <div class="row-input">
+                    <input type="radio" name="radio1" id="j_form_radio1" value="1" data-toggle="icheck" data-label="单选框">
+                     <input type="radio" name="radio1" id="j_form_radio2" value="2" data-toggle="icheck" data-label="单选框">
+                </div>
+                <label class="row-label">日期控件</label>
+                <div class="row-input">
+                    <input type="text" value="2016-10-01" data-toggle="datepicker">
+                </div>
+                <label class="row-label">Tags</label>
+                <div class="row-input">
+                    <input type="text" name="tags" value="" data-toggle="tags" data-url="../../json/tags/tags.json" data-width="100%" size="20" placeholder="输入关键字，回车提交">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--高级搜索 end-->
+  
+    <div style="position: relative;">
+
+
+    <div class="Advancedsearch-btn" style="position: absolute;top: 0;right: 10px;z-index: 9999">
+         <a href="javascript:void(0);" class="btn btn-red"  data-toggle="collapse" data-target="#Advancedsearch">
+         高级搜索&nbsp;<i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+    </div>
+     
+            <table class="table table-bordered" id="datagrid-test-filter" data-toggle="datagrid" data-options="{
+            tableWidth:'99%',
+            height: '100%',
+            gridTitle : '',
+            showToolbar: true,
+            toolbarItem:'all',
+            toolbarCustom:'#tb',
+            dataUrl: 'http://b-jui.com/demo?callback=?',
+            dataType: 'jsonp',
+            jsonPrefix: 'obj',
+            editMode: {dialog:{width:'1000',height:'320',title:'编辑信息',mask:true}},
+            editUrl: '../../html/datagrid/datagrid-edit.html?code={code}',
+            paging: {pageSize:22},
+            showCheckboxcol: true,
+            linenumberAll: true,
+            importOption: {type:'dialog', options:{url:'../../html/datagrid/datagrid-import.html', width:500, height:300, title:'导入相关信息'}},
+            exportOption: {type:'file', options:{url:'http://b-jui.com/demo/export', loadingmask:false}},
+            filterThead:false,
+            showLinenumber:false
+
+    }">
+        <thead>
+            <tr>
+                <th data-options="{name:'code',align:'center',width:70}">门诊号</th>
+                <th data-options="{name:'opercode',align:'center'}">操作员编号</th>
+
+                <th data-options="{name:'regname'}">挂号类别</th>
+                <th data-options="{name:'regfee',align:'center',width:60}">挂号费</th>
+                <th data-options="{name:'name',align:'center',width:70}">姓名</th>
+                <th data-options="{name:'sex',align:'center',width:45,type:'select',items:[{'true':'男'},{'false':'女'}]}">性别</th>
+                <th data-options="{name:'age',align:'center',type:'number',width:45,render:function(value){return 2015-parseInt(value)}}">年龄</th>
+                <th data-options="{name:'fr',align:'center',width:70,type:'boolean',render:function(value){return value ? '√' : '×'}}">是否初诊</th>
+                <th data-options="{name:'see',align:'center',width:55,type:'boolean',render:function(value){return value ? '√' : '×'}}">已就诊</th>
+               
+            </tr>
+        </thead>
+    </table>
+
+
+
+    </div>
+
+</div>
+    <div id="tb">    
+    <button type="button" class="btn btn-blue" data-icon="plus" onclick="updateCustomer()"><i class="fa fa-plus"></i> 审核</button>   
+</div>    
+<script type="text/javascript">
+
+//显示修改对话框
+    function updateCustomer(){ 
+
+    //选取要修改的数据
+
+   var rowscolum;
+
+      //判断有没有选择要修改的数据
+      rowscolum = $('#datagrid-test-filter').data('selectedDatas');
+
+      if(rowscolum){
+
+        console.log(rowscolum[0].code);
+
+        BJUI.dialog({
+
+            url:'../../html/datagrid/datagrid-edit.html',
+            title:'审核中',
+            mask:true
+
+        });
+
+
+      }
+      else{
+
+        BJUI.alertmsg('error', '请选择数据行');
+
+        return;
+
+      }
+}
+    
+</script>
