@@ -198,6 +198,7 @@ class IndexController extends Yaf_Controller_Abstract {
 
 	public function ajaxLoginAction()
 	{
+
 		$request = $this->getRequest();
 		$params['username'] = $request->getpost('username','');
 		$params['userpwd'] = $request->getpost('passwordhash','');

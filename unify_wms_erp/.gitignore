@@ -1,0 +1,8 @@
+application/cache/
+application/conf/
+public/upload/
+attachment/
+.idea/
+../.idea/
+public/logs/
+public/static/

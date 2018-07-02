@@ -756,7 +756,7 @@ class COMMON
         $logo = '../public/logo.png';
         $res = $QRCodeInstance -> format('png') -> size(intval($width)) -> margin(0) -> merge($logo, .2) -> generate($url);
         $pic = 'upload/img/'.$file_name.'.png';
-        file_put_contents($pic,$res);
+        @file_put_contents($pic,$res);
         if($return_type){
             echo "<img width='".$width."' height='".$height."' src='/".$pic."'>";
             return;

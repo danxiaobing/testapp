@@ -562,6 +562,7 @@
     <embed id="LODOP_EM" type="application/x-print-lodop" width=0 height=0></embed>
 </object>
 <script language="javascript" type="text/javascript">
+    var $picAddress = ''
     var LODOP; //声明为全局打印变量
     {{--console.log({{$table_html}});--}}
     //打印入库单字段布局
@@ -576,13 +577,13 @@
         LODOP.ADD_PRINT_TEXT(157, 110, 130, 27, "{{$carid}}");
         LODOP.ADD_PRINT_TEXT(157, 361, 131, 24, "{{$goodsname}}");
         LODOP.ADD_PRINT_TEXT(158, 550, 70, 26, "{{$takeqty}}"/1000);
-        LODOP.ADD_PRINT_TEXT(205, 109, 130, 30, "{{$storagetankname}}"); 
-        LODOP.ADD_PRINT_TEXT(259, 113, 130, 30, "{{$cranename}}"); 
-        LODOP.ADD_PRINT_TEXT(414, 66, 130, 30, "{{$create_username}}"); 
-        LODOP.ADD_PRINT_TEXT(360, 290, 120, 110, "{{$memo}}"); 
+        LODOP.ADD_PRINT_TEXT(205, 109, 130, 30, "{{$storagetankname}}");
+        LODOP.ADD_PRINT_TEXT(259, 113, 130, 30, "{{$cranename}}");
+        LODOP.ADD_PRINT_TEXT(414, 66, 130, 30, "{{$create_username}}");
+        LODOP.ADD_PRINT_TEXT(360, 290, 120, 110, "{{$memo}}");
         if("{{$qrcode_queue}}"){
-            LODOP.ADD_PRINT_TEXT(26, 114, 130, 30, "扫描二维码\n查看排号情况"); 
-            LODOP.ADD_PRINT_IMAGE(6,-12, 110, 105,"{{COMMON::createPic( 'http://'.$_SERVER['SERVER_NAME'].$qrcode_queue, TRUE, 'test_bangmaout.png', 110, 110)}}");
+            LODOP.ADD_PRINT_TEXT(26, 114, 130, 30, "扫描二维码\n查看排号情况");
+            LODOP.ADD_PRINT_IMAGE(6,-12, 110, 105, "{{}}");
         }
 
 

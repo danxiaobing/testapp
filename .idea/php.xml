@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/pclzip/pclzip" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/gregwar/captcha" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/illuminate/view" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/hprose/hprose" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/phpqrcode/bindings" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/illuminate/events" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/jenssegers/blade" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/simplesoftwareio/simple-qrcode" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/phpqrcode/tools" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/zendframework/zend-escaper" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/zendframework/zend-stdlib" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/zendframework/zend-validator" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/phpqrcode/temp" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/phpoffice/phpword" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/phpqrcode/cache" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/phpoffice/common" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/phpoffice/phpexcel" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/composer" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/aliyuncs/oss-sdk-php" />
+      <path value="$PROJECT_DIR$/unify_wms_erp/vendor/doctrine/inflector" />
+    </include_path>
+  </component>
+</project>

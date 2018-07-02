@@ -199,7 +199,7 @@ class MySQL {
 		if (2 <= func_num_args()) {
 			$sql = $this->fetch_args(func_get_args());
 		}
-		error_log(date("Y-m-d H:i:s") . "\t" . $sql . "\n", 3, 'logs/sql_update_log.txt');
+		//error_log(date("Y-m-d H:i:s") . "\t" . $sql . "\n", 3, 'logs/sql_update_log.txt');
 		($this->dbh->exec($sql)) || $this->error($sql);
 	}
 
@@ -218,11 +218,11 @@ class MySQL {
 
 		$val = $this->filter_value($values);
 		$sql = "INSERT LOW_PRIORITY INTO `$table` SET $val";
-		// error_log(date("Y-m-d H:i:s") . "\t" . $sql . "\n", 3, 'logs/sql_insert_log.txt');
 		if($this->dbh->query($sql)){
 			$id = $this->dbh->lastInsertId();
 			return $id;
 		}else{
+            //error_log(date("Y-m-d H:i:s") . "\t" . $sql . "\n", 3, 'logs/sql_insert_log.txt');
 			return $this->error($sql);
 		}
 	}
@@ -234,10 +234,10 @@ class MySQL {
 		$sql = "UPDATE LOW_PRIORITY `$table` SET $val WHERE $where";
 		if($this->dbh->query($sql)){
 			//测试期间使用
-			error_log(date("Y-m-d H:i:s") . "\t" . $sql . "\n", 3, 'logs/sql_update_log.txt');
+			//error_log(date("Y-m-d H:i:s") . "\t" . $sql . "\n", 3, 'logs/sql_update_log.txt');
 			return true;
 		}else{
-            error_log(date("Y-m-d H:i:s") . "\t" .'error_Sql:'. $sql . "\n", 3, 'logs/sql_update_log.txt');
+            //error_log(date("Y-m-d H:i:s") . "\t" .'error_Sql:'. $sql . "\n", 3, 'logs/sql_update_log.txt');
 			$this->error($sql);
 			return false;
 		}
@@ -330,7 +330,7 @@ class MySQL {
 			$msg .= 'param: ' . $ext . "\r\n\r\n";
 
 
-			error_log($msg, 3, $this->log_error);
+			//error_log($msg, 3, $this->log_error);
 			return false;
 		}
 	}
