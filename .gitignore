@@ -1,0 +1,8 @@
+unify_wms_erp/application/cache/
+unify_wms_erp/application/conf/
+unify_wms_erp/public/upload/
+unify_wms_erp/attachment/
+unify_wms_erp/.idea/
+unify_wms_erp/public/logs/
+unify_wms_erp/public/static/
+./idea/
