@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/aliyuncs/oss-sdk-php" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/bacon/bacon-qr-code" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/gregwar/captcha" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/hprose/hprose" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/illuminate/container" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/illuminate/contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/illuminate/events" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/illuminate/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/illuminate/support" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/illuminate/view" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/jenssegers/blade" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/pclzip/pclzip" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/phpoffice/common" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/phpoffice/phpexcel" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/phpoffice/phpword" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/phpqrcode/bindings" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/phpqrcode/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/phpqrcode/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/phpqrcode/tools" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/simplesoftwareio/simple-qrcode" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/zendframework/zend-escaper" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/zendframework/zend-stdlib" />
+      <excludeFolder url="file://$MODULE_DIR$/unify_wms_erp/vendor/zendframework/zend-validator" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
